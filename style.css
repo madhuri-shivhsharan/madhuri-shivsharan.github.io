@@ -1,0 +1,579 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #0a1a2f;
+  padding: 15px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url("images/skill/6.png") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-buttons a {
+  border: 1px solid white;
+  padding: 10px;
+  margin: 5px;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+
+/* SECTIONS */
+.container {
+  padding: 50px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.card {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* SKILLS */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+}
+
+.skill-card {
+  background: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* CERT / PROJECT BOX */
+.cert-box {
+  background: #111;
+  color: white;
+  padding: 20px;
+}
+
+img {
+  width: 100%;
+  margin: 10px 0;
+}
+ 
+
+/* contact section */
+.contact-section {
+  min-height: 100vh;
+
+  background: linear-gradient(rgba(10,26,47,0.85), rgba(10,26,47,0.85)),
+              url("images/skill/6.png");
+
+  background-size: cover;
+  background-position: center;
+
+  display: grid;               /* 🔥 CHANGE FLEX → GRID */
+  place-items: center;         /* 🔥 PERFECT CENTER (both ways) */
+
+  margin: 0;
+}
+/* FIX CONTENT VISIBILITY */
+.contact-content {
+  max-width: 400px;
+  width: 100%;
+  z-index: 2;
+}
+
+/* TEXT */
+.block h4 {
+  color: #ccc;
+}
+
+.block p,
+.block a {
+  color: white;
+}
+
+/* ICON */
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+}
+
+.social-icon {
+  width: 25px;
+}
+ 
+
+/* CONTACT BLACK CARD */
+.contact-box {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 50px 40px;
+  border-radius: 12px;
+
+  width: 420px;
+  max-width: 90%;
+
+  color: white;
+  text-align: center;
+
+  position: relative;   /* 🔥 needed for cross button */
+
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+.underline {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: white;
+}
+
+.block {
+  margin-bottom: 25px;
+}
+
+.block h4 {
+  font-size: 13px;
+  letter-spacing: 3px;
+  color: #aaa;
+}
+
+.block p,
+.block a {
+  color: white;
+  text-decoration: none;
+}
+
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+}
+
+.social-icon {
+  width: 25px;
+}
+  /* apply ONLY to GitHub */
+.github-icon {  
+  filter: brightness(0) invert(1);
+}
+
+.close-btn {
+  position: absolute;   /* 🔥 stays inside box */
+  top: 15px;
+  right: 20px;
+
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+
+  cursor: pointer;
+}
+
+/* ABOUT ME SECTION BACKGROUND */
+.about-section {
+  min-height: 100vh;
+
+  background: linear-gradient(rgba(10,26,47,0.85), rgba(10,26,47,0.85)),
+              url("images/skill/6.png");
+
+  background-size: cover;
+  background-position: center;
+
+  display: grid;
+  place-items: center;
+}
+
+/* CENTER CARD */
+.about-box {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 50px 40px;
+  border-radius: 12px;
+
+  width: 500px;
+  max-width: 90%;
+
+  color: white;
+  text-align: left;
+
+  position: relative;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+/* TEXT */
+.about-content p {
+  margin-bottom: 15px;
+}
+
+.about-content ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.about-content li {
+  margin-bottom: 10px;
+}
+
+/* SAME CROSS BUTTON */
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+}
+
+/* SKILL SECTION (center like contact/about) */
+.skills-section {
+  min-height: 100vh;
+
+  background: linear-gradient(rgba(10,26,47,0.85), rgba(10,26,47,0.85)),
+              url("images/skill/6.png");
+
+  background-size: cover;
+  background-position: center;
+
+  display: grid;
+  place-items: center;
+}
+
+/* CENTER CARD */
+.skills-box {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 12px;
+
+  width: 700px;
+  max-width: 95%;
+
+  color: white;
+  text-align: center;
+
+  position: relative;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+/* GRID INSIDE CARD */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* SKILL CARD */
+.skill-card {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.skill-card:hover {
+  background: rgba(255,255,255,0.1);
+  transform: translateY(-5px);
+}
+
+/* ICON */
+.skill-card img {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+/* TEXT */
+.skill-card h3 {
+  margin-bottom: 8px;
+}
+
+.skill-card p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* EXPERIENCE SECTION */
+.experience-section {
+  min-height: 100vh;
+
+  background: linear-gradient(rgba(10,26,47,0.85), rgba(10,26,47,0.85)),
+              url("images/skill/6.png");
+
+  background-size: cover;
+  background-position: center;
+
+  display: grid;
+  place-items: center;
+}
+
+/* CENTER CARD */
+.experience-box {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 12px;
+
+  width: 700px;
+  max-width: 95%;
+  max-height: 90vh;        /* 🔥 IMPORTANT */
+  overflow-y: auto;        /* 🔥 scroll inside */
+
+  color: white;
+  text-align: center;
+
+  position: relative;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+/* CONTENT */
+.experience-content {
+  margin-top: 20px;
+}
+
+.exp-item {
+  margin-bottom: 20px;
+}
+
+/* IMAGE */
+.exp-item img {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* LINE */
+hr {
+  border: 0;
+  height: 1px;
+  background: rgba(255,255,255,0.2);
+  margin: 25px 0;
+}
+
+/* TEXT */
+.exp-item h3 {
+  margin-bottom: 10px;
+}
+
+.exp-item p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+
+/* CERTIFICATION SECTION */
+
+.cert-section {
+  min-height: 100vh;
+
+  background: linear-gradient(rgba(10,26,47,0.85), rgba(10,26,47,0.85)),
+              url("images/skill/6.png");
+
+  background-size: cover;
+  background-position: center;
+
+  display: grid;
+  place-items: center;
+}
+
+/* POPUP CARD */
+.cert-box {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 12px;
+
+  width: 700px;
+  max-width: 95%;
+  max-height: 90vh;
+  overflow-y: auto;   /* 🔥 scroll */
+
+  color: white;
+
+  position: relative;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+/* IMAGE */
+.cert-box img {
+  width: 100%;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+/* LIST */
+.cert-box ul {
+  padding-left: 20px;
+}
+
+.cert-box li {
+  margin-bottom: 8px;
+  color: #ccc;
+}
+
+/* LINE */
+.cert-box hr {
+  border: 0;
+  height: 1px;
+  background: rgba(255,255,255,0.2);
+  margin: 25px 0;
+}
+
+
+/* PROJECT SECTION */
+.underline {
+  display: block;
+  text-align: center;
+  margin: 0 auto 30px;
+}
+
+.project-section {
+  min-height: 100vh;
+
+  background: linear-gradient(rgba(10,26,47,0.85), rgba(10,26,47,0.85)),
+              url("images/skill/6.png");
+
+  background-size: cover;
+  background-position: center;
+
+  display: grid;
+  place-items: center;
+}
+
+/* POPUP CARD */
+.project-box {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 12px;
+
+  width: 700px;
+  max-width: 95%;
+  max-height: 90vh;
+  overflow-y: auto;
+
+  color: white;
+
+  position: relative;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+/* IMAGE */
+.project-box img {
+  width: 100%;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+/* TEXT */
+.project-box p {
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+/* LINE */
+.project-box hr {
+  border: 0;
+  height: 1px;
+  background: rgba(255,255,255,0.2);
+  margin: 25px 0;
+}
+
+/* 1 VIEW BUTTON */
+.btn-center {
+  text-align: center;
+  margin-top: 15px;
+}
+
+
+
+.project-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #131414d8;
+  color: white;
+  border: 2px solid white;   /* White border */
+ text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.project-btn:hover {
+  background-color: #224abe;
+}
+
+
+/* 2 VIEW BUTTON */
+
+.btn-center {
+  text-align: center;
+  margin-top: 15px;
+}
+
+
+
+.project-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #131414d8;
+  color: white;
+  border: 2px solid white;   /* White border */
+ text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.project-btn:hover {
+  background-color: #224abe;
+} 
